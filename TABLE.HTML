@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>table tag in html</title>
+        <style>
+            table{
+                border:2px solid gray;
+            }
+            tr,td,th{
+                border:2px solid rgb(131, 221, 13);
+                background-color:yellowgreen;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Table tag</h1>
+        <table  cellspacing="0px" cellpadding="5px">
+            <captain>TIME TABLE</captain>
+            <tr>
+               <td>numbers</td>
+               <td>one</td>
+               <td>two</td>
+               <td>three</td>
+               <td>four</td>
+            </tr>
+            <tr>
+                <td>symbols</td>
+                <td>@</td>
+                <td>#</td>
+                <td>$</td>
+                <td>%</td>
+            </tr>
+            <tr>
+                <td>words</td>
+                <td>A</td>
+                <td>S</td>
+                <td>P</td>
+                <td>K</td>
+            </tr>
+        </table>
+        <h1>column merge</h1>
+        <table  cellspacing="0px" cellpadding="5px">
+            <tr>
+               <th>numbers</th>
+               <th>one</th>
+               <th>two</th>
+               <th>three</th>
+               <th>four</th>
+            </tr>
+            <tr>
+                <td>symbols</td>
+                <td>@</td>
+                <td colspan="3" style=background-color:tomato>#</td>
+                <!-- <td>$</td>
+                <td>%</td> -->
+            </tr>
+            <tr>
+                <td>words</td>
+                <td>A</td>
+                <td>S</td>
+                <td colspan="2" style=background-color:pink>P</td>
+                <!-- <td>K</td> -->
+            </tr>
+        </table>
+        <H1>Row merge</H1>
+        <table  cellspacing="0px" cellpadding="5px">
+            <tr>
+               <td>numbers</td>
+               <td rowspan="3" STYLE=background-color:yellow>one</td>
+               <td>two</td>
+               <td>three</td>
+               <td>four</td>
+            </tr>
+            <tr>
+                <td>symbols</td>
+                <td>@</td>
+                <td>#</td>
+                <td rowspan="2" style=background-color:gray>$</td>
+                <!-- <td>%</td> -->
+            </tr>
+            <tr>
+                <td>words</td>
+                <td>A</td>
+                <td>S</td>
+                <!-- <td>P</td> -->
+                <!-- <td>K</td> -->
+            </tr>
+        </table>    
+    </body>
+</html>
